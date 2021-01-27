@@ -21,13 +21,18 @@ const Navbars=()=> {
                       <Navbar.Brand> <h4>LOGO</h4></Navbar.Brand>
                       <Navbar.Toggle aria-controls="basic-navbar-nav" />
                       <Navbar.Collapse id="basic-navbar-nav">
-                      <Nav variant="pills" defaultActiveKey="/home">
+                      <Nav variant="pills" defaultActiveKey="/">
 
                         <Nav.Item className="navbarbtn">
-                          <Nav.Link eventKey="link-1">
-                          <Link style={{color:"black"}} to="/home"> Home </Link>
+                          <Nav.Link eventKey="link-1" href='/'> Home
+                          {/* <Link style={{color:"black"}} to="/"> Home </Link> */}
                           </Nav.Link>
                         </Nav.Item>
+
+                        {/* <Nav.Item className="navbarbtn">
+                          <Nav.Link eventKey="link-3"> <Link id="RouterNavLink"
+                           style={{color:"black"}} to="/"> Home </Link> </Nav.Link>
+                        </Nav.Item> */}
 
                         <Nav.Item className='navbarbtn'>
                           <Nav.Link eventKey="link-2"> <Link style={{color:"black"}} 
@@ -40,6 +45,12 @@ const Navbars=()=> {
                           </Nav.Link>
                         </Nav.Item>
 
+                        {/* <Nav.Item className="navbarbtn">
+                          <Nav.Link href='/'> Login
+                          <Link style={{color:"black"}} to="/"> Login </Link>
+                          </Nav.Link>
+                        </Nav.Item> */}
+
                       </Nav>
                       </Navbar.Collapse>
                     </Navbar>
@@ -48,7 +59,7 @@ const Navbars=()=> {
                     <Switch>
 
                      {/* <Route exact path="/" component={Login} /> */}
-                      <Route exact path="/home" component={Home} />
+                      <Route exact path="/" component={Home} />
                       
                       <Route exact path="/user" component={User} />
                         

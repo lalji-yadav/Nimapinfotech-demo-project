@@ -4,7 +4,8 @@ import Login from "./components/Login";
 import {
   BrowserRouter as Router,
   Switch,
-  Route
+  Route,
+  Link
 } from "react-router-dom";
 
 
@@ -18,6 +19,9 @@ function App() {
           <Route exact path="/navbar"  component={Navbar} />
         </Switch>
       </Router>
+
+     {/* <Navbar />
+    <Login /> */}
    
     </div>
   );

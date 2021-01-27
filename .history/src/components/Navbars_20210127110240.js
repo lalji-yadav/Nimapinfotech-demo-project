@@ -24,10 +24,15 @@ const Navbars=()=> {
                       <Nav variant="pills" defaultActiveKey="/home">
 
                         <Nav.Item className="navbarbtn">
-                          <Nav.Link eventKey="link-1">
-                          <Link style={{color:"black"}} to="/home"> Home </Link>
+                          <Nav.Link eventKey="link-1" href='/home'> Home
+                          <Link style={{color:"black"}} to="/"> Home </Link>
                           </Nav.Link>
                         </Nav.Item>
+
+                        {/* <Nav.Item className="navbarbtn">
+                          <Nav.Link eventKey="link-3"> <Link id="RouterNavLink"
+                           style={{color:"black"}} to="/"> Home </Link> </Nav.Link>
+                        </Nav.Item> */}
 
                         <Nav.Item className='navbarbtn'>
                           <Nav.Link eventKey="link-2"> <Link style={{color:"black"}} 
@@ -39,6 +44,12 @@ const Navbars=()=> {
                           <Link style={{color:"black"}} to="/user"> User </Link>
                           </Nav.Link>
                         </Nav.Item>
+
+                        {/* <Nav.Item className="navbarbtn">
+                          <Nav.Link href='/'> Login
+                          <Link style={{color:"black"}} to="/"> Login </Link>
+                          </Nav.Link>
+                        </Nav.Item> */}
 
                       </Nav>
                       </Navbar.Collapse>

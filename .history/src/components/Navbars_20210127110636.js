@@ -29,6 +29,11 @@ const Navbars=()=> {
                           </Nav.Link>
                         </Nav.Item>
 
+                        {/* <Nav.Item className="navbarbtn">
+                          <Nav.Link eventKey="link-3"> <Link id="RouterNavLink"
+                           style={{color:"black"}} to="/"> Home </Link> </Nav.Link>
+                        </Nav.Item> */}
+
                         <Nav.Item className='navbarbtn'>
                           <Nav.Link eventKey="link-2"> <Link style={{color:"black"}} 
                            to="/tasks"> Tasks </Link> </Nav.Link>
@@ -39,6 +44,12 @@ const Navbars=()=> {
                           <Link style={{color:"black"}} to="/user"> User </Link>
                           </Nav.Link>
                         </Nav.Item>
+
+                        {/* <Nav.Item className="navbarbtn">
+                          <Nav.Link href='/'> Login
+                          <Link style={{color:"black"}} to="/"> Login </Link>
+                          </Nav.Link>
+                        </Nav.Item> */}
 
                       </Nav>
                       </Navbar.Collapse>
